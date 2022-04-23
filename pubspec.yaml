@@ -1,0 +1,32 @@
+name: google_ml_kit
+description: A Flutter plugin to use all APIs from Google's standalone ML Kit for mobile platforms.
+version: 0.8.0
+homepage: https://github.com/bharat-biradar/Google-Ml-Kit-plugin
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Vision APIs
+  google_mlkit_barcode_scanning: ^0.0.1+1
+  google_mlkit_digital_ink_recognition: ^0.0.1+1
+  google_mlkit_face_detection: ^0.0.1
+  google_mlkit_image_labeling: ^0.0.1
+  google_mlkit_object_detection: ^0.0.1
+  google_mlkit_pose_detection: ^0.0.1
+  google_mlkit_text_recognition: ^0.0.1
+
+  # Natural Language APIs
+  google_mlkit_entity_extraction: ^0.0.1
+  google_mlkit_language_id: ^0.0.1
+  google_mlkit_translation: ^0.0.1
+  google_mlkit_smart_reply: ^0.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.4
