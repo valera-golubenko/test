@@ -38,21 +38,12 @@ class Auth extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              _button(_googlesvg, 'Sign up with Google', Colors.white, null),
+              _button(_googlesvg, 'Sign up with Google',
+                  Color.fromARGB(34, 100, 104, 255), null),
               SizedBox(height: 20),
-              _button(_facebooksvg, 'Sign up with Facebook', Colors.blue, null),
+              _button(_facebooksvg, 'Sign up with Facebook',
+                  Color.fromARGB(34, 100, 104, 255), null),
               SizedBox(height: 20),
-              SignInButton(
-                Buttons.Google,
-                text: "Sign up with Google",
-                onPressed: () {},
-              ),
-              SignInButton(
-                Buttons.Facebook,
-                text: "Sign up with Facebook",
-                mini: true,
-                onPressed: () {},
-              )
             ],
           ),
         ));
@@ -64,7 +55,10 @@ Widget _button(icon, String title, color, function) {
     onTap: function,
     child: Container(
       padding: const EdgeInsets.all(15.0),
-      color: color,
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(20),
+      ),
       child: Row(
         children: [
           SizedBox(
@@ -75,9 +69,9 @@ Widget _button(icon, String title, color, function) {
           SizedBox(width: 15),
           Text(title,
               style: TextStyle(
-                color: Colors.black,
+                color: Colors.white,
                 fontSize: 20,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w400,
               ))
         ],
       ),
