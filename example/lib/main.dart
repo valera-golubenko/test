@@ -1,6 +1,7 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 
+import 'auth/auth.dart';
 import 'nlp_detector_views/entity_extraction_view.dart';
 import 'nlp_detector_views/language_identifier_view.dart';
 import 'nlp_detector_views/language_translator_view.dart';
@@ -22,8 +23,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(primaryColor: Color.fromRGBO(50, 65, 85, 1)),
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: Auth(),
     );
   }
 }
